@@ -22,7 +22,7 @@ class ProjectFactory extends Factory
             'title' => collect(fake()->words(5))->join(' '),
             'description' => fake()->randomHtml(),
             'status' => fake()->randomElement(['open', 'closed']),
-            'tech_stack' => fake()->randomElements(['Vue', 'Laravel', 'Tailwind', 'Node', 'Spring', 'Angular', 'Livewire']),
+            'tech_stack' => fake()->randomElements(['nodejs', 'react', 'js', 'vite', 'nextjs']),
             'ends_at' => fake()->dateTimeBetween('now', '+ 3 days'),
         ];
     }
